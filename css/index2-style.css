@@ -1,0 +1,81 @@
+/*
+        *
+        Общие стили
+        *
+         */
+*{
+    font-family: 'Lato', sans-serif;
+}
+div{
+    float: left;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+td input{
+    transition: .2s all ease;
+}
+
+td input[type=reset], td input[type=submit]{
+    padding: .4em 1.2em;
+    font-size: 14px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    margin-right: 60px;
+}
+td input[type=reset]:hover{
+    box-shadow:2px 2px 5px #4e98cb;
+    transform: rotateZ(-5deg);
+}
+td input[type=submit]:hover{
+    box-shadow:2px 2px 5px #45d489;
+    transform: rotateZ(5deg);
+}
+td input[type=reset]{
+    background-color: #5887c2;
+    color: white;
+}
+
+
+/*
+*
+Стили для первой формы
+*
+ */
+
+.mainForm tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.mainForm td{
+    padding: .5em .5em;
+}
+
+
+td input[type=text], td input[type=password], td input[type=number], textarea, select{
+    border-radius: 8px;
+    padding: .4em;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.mainForm td input[type=submit]{
+    background-color: #3da562;
+    color: white;
+}
+
+.form-srs table{
+    /*background: #edeef0;*/
+}
+.form-srs td{
+    padding: 2em;
+    border: 2px solid #c5c5c5;
+    border-radius: .4em;
+    background: #edeef0;
+}
+.form-srs output[name=x2]{
+    color: dodgerblue;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ЗАДАНИЕ-2</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="css/index2-style.css" rel="stylesheet">
+
+
+</head>
+<body>
+<section>
+
+    <div class="mainForm">
+        <form action="index2.html" method="get">
+            <h1 align="center">Задание 2</h1>
+            <table style="width:500px;">
+                <tr>
+                    <td><label for="log">Login: </label></td>
+                    <td><input type="text" name="login" id="log"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password: </label></td>
+                    <td><input type="password" name="password" id="pass"></td>
+                </tr>
+                <tr>
+                    <td><label for="chp">Repeate password: </label></td>
+                    <td><input type="password" name="check-pass" id="chp"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender: </label></td>
+                    <td>
+                        <input type="radio" name="gender" id="gender_male">
+                            <label for="gender_male">Male</label>
+                        <input type="radio" name="gender" id="gender_female">
+                            <label for="gender_female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Country: </label></td>
+                    <td>
+                        <select multiple>
+                            <option>Ukraine</option>
+                            <option>Russia</option>
+                            <option>Germany</option>
+                            <option>Italy</option>
+                            <option>France</option>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>About You: </label></td>
+                    <td>
+                        <textarea placeholder="Write there about your life" rows="4" cols="35"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Hobbies: </td>
+                    <td>
+                        <input type="checkbox" id="chess">
+                        <label for="chess">Chess</label>
+
+                        <input type="checkbox" id="soccer">
+                        <label for="soccer">Soccer</label>
+
+                        <input type="checkbox" id="draw">
+                        <label for="draw">Drawing</label>
+
+                        <input type="checkbox" id="mus">
+                        <label for="mus">Music</label>
+                    </td>
+                </tr>
+
+                <tr><td></td>
+                    <td align="right">
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <div class="form-srs">
+            <h1 align="center">Самостоятельная работа</h1>
+            <table>
+                <tr>
+                    <td>
+                        <form oninput="x1.value=parseInt(a1.value)+parseInt(b1.value)">
+                            <input type="number" id="a1" value="0">
+                            + <input type="number" id="b1" value="0">
+                            = <output name="x1" for="a1 b1"></output>
+                        </form>
+                    </td>
+                    <td align="center">
+                        <form oninput="x2.value=parseInt(a2.value)">
+                            0<input type="range" id="a2" value="50">100
+                            <br><output name="x2" for="a2"></output>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form oninput="weight()">
+                            <label>Your weight in kilograms: </label>
+                                <input type="number" id="kilo" value="0">
+                            <output name="x3" for="a"></output>
+                            <p>Your weight in pounds: <b id="pounds"></b></p>
+                            <p>Your weight in pounds: <b id="hundred"></b></p>
+                        </form>
+                    </td>
+                    <td>
+                        <form oninput="salary()">
+                            <p><label for="hour">How many hours?</label>
+                                <input type="text" id="hour"></p>
+
+                            <p><label for="rate">Rate: </label>
+                                <input type="text" id="rate">$</p>
+
+                            <p><label for="tax">Tax: </label>
+                                <input type="text" id="tax"></p>
+                            <p>Total salary: <b id="salary"></b></p>
+                            <input type="reset" value="Reset">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+    </div>
+</section>
+
+<script src="js/index2-scripts.js"></script>
+</body>
+</html>
